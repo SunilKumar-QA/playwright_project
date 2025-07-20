@@ -2,8 +2,10 @@ pipeline {
     agent any
 
     tools {
-        python 'Python3' // Must match the name you gave in Jenkins
+        // This uses Pyenv Pipeline Plugin
+        pyenv '3.11.8'  // Must match the version installed via pyenv
     }
+    
 
     environment {
         PYTHONUNBUFFERED = 1
