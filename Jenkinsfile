@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        python 'Python313'  // Use the correct name from Global Tool Config
+        'jenkins.plugins.shiningpanda.tools.PythonInstallation' 'Python313'
     }
 
     environment {
