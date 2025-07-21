@@ -2,10 +2,8 @@ pipeline {
     agent any
 
     tools {
-        // This uses Pyenv Pipeline Plugin
-        pyenv '3.11.8'  // Must match the version installed via pyenv
+        python 'Python313'  // Use the correct name from Global Tool Config
     }
-    
 
     environment {
         PYTHONUNBUFFERED = 1
@@ -21,7 +19,7 @@ pipeline {
         stage('Set Up Python') {
             steps {
                 bat 'python --version'
-                bat 'pip install --upgrade pip'
+                bat 'python -m pip install --upgrade pip'
                 bat 'pip install -r requirements.txt'
             }
         }
