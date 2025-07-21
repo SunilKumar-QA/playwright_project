@@ -32,7 +32,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'pytest tests/ --headed --maxfail=1 --disable-warnings -v'
+                bat 'pytest tests/ --maxfail=1 --disable-warnings -v'
             }
         }
     }
