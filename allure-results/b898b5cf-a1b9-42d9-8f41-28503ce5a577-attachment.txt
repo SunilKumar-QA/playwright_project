@@ -1,0 +1,4 @@
+🔎 Total table rows found: 1
+🔍 Checking row 0 => ID: , Name: 0370
+❌ Employee ID not found in table.
+🔍 Searching for employee ID: 0370
