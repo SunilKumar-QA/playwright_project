@@ -81,7 +81,7 @@ class EmployeePage:
     def edit_employee(self, emp_id, new_first, new_last):
         self.search_employee_by_id(emp_id)
         self.table_rows.first.click()
-        self.page.wait_for_timeout(1000)
+        self.page.wait_for_timeout(3000)
         self.fill_input(self.page.locator("input[name='firstName']"), new_first)
         self.fill_input(self.page.locator("input[name='lastName']"), new_last)
 
